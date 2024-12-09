@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "email": "teste@teste.com",
+      "password": "$2a$10$G3H1aJAYVKOa9kK7qBhzZexyRN0ifYty8uY3AoSAibrkJF8jF9INu",
+      "id": 1
+    },
+    {
+      "email": "teste2@teste.com",
+      "password": "$2a$10$ywrWLskdXjz7qoMNIiMC2eGxcu8GcsHkSJRGWyAV9DR1cC4USnOTW",
+      "id": 2
+    },
+    {
+      "email": "daniel@d.com",
+      "password": "$2a$10$/Z.W/OEiLoQ.z.64xWurqeWdBpRyFTiVviKgynQTTkOTyA9MTRVAa",
+      "id": 3
+    },
+    {
+      "email": "eminem@e.com",
+      "password": "$2a$10$mC12wSoQ/3kpGwWuD/rP9OvZPdUlY5a9KH9LCHz9X6wPhz9Pyr4fC",
+      "id": 4
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$yJZD4AJyPYE2Pr15bKtt4eIJOCJHTnT1FvTeciM7fOaIEi0uarSF.",
+      "id": 5
+    }
+  ],
+  "materias": [
+    {
+      "id": 1,
+      "nome": "Direito Administrativo",
+      "topico": "Lei de Improbidade Administrativa",
+      "meta": 85
+    },
+    {
+      "id": 2,
+      "nome": "Física",
+      "topico": "Mecânica",
+      "meta": 90
+    },
+    {
+      "nome": "Direito Constitucional",
+      "topico": "Direitos Individuais",
+      "meta": 80,
+      "id": 3
+    },
+    {
+      "nome": "Auditoria",
+      "topico": "Alienacao ficticia de bens",
+      "meta": 90,
+      "id": 4
+    }
+  ],
+  "duracaoEstudos": [
+    {
+      "id": 1,
+      "materia_id": 1,
+      "minutos": "100",
+      "questoesCorretas": 10,
+      "totalQuestoes": 15
+    },
+    {
+      "id": 2,
+      "materia_id": 2,
+      "minutos": 90,
+      "questoesCorretas": 8,
+      "totalQuestoes": 10
+    },
+    {
+      "materiaId": 3,
+      "minutos": 85,
+      "questoesCorretas": 7,
+      "totalQuestoes": 10,
+      "id": 3
+    }
+  ]
+}

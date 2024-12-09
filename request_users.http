@@ -1,0 +1,19 @@
+### USUÁRIOS
+GET http://localhost:3000/users
+
+### REGISTER
+POST http://localhost:3000/users
+content-type: application/json
+
+        {
+            "email": "teste@teste.com",
+            "password": "1234"
+        }
+
+### LOGIN
+POST http://localhost:3000/login
+content-type: application/json
+        {
+            "email": "teste@teste.com",
+            "password": "1234"
+        }

@@ -1,0 +1,46 @@
+@TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTczMzMzNDQwNSwiZXhwIjoxNzMzMzM4MDA1LCJzdWIiOiIxIn0.XYsjg0qYyvc4nrVuv7zd4wC392fTHIsrnGpjV-pHjDU
+### LOGIN
+POST http://localhost:3000/login
+content-type: application/json
+
+        {
+            "email": "teste@teste.com",
+            "password": "1234"
+        }
+
+### MATERIAS
+GET http://localhost:3000/660/materias
+Authorization: Bearer {{TOKEN}}
+
+### CREATE
+POST http://localhost:3000/660/materias
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTczMzMzNDQwNSwiZXhwIjoxNzMzMzM4MDA1LCJzdWIiOiIxIn0.XYsjg0qYyvc4nrVuv7zd4wC392fTHIsrnGpjV-pHjDU
+
+        {
+            "id": 3,
+            "nome": "Economia",
+            "topico": "Modelo IS-LM-BP",
+            "meta": 90.0
+        }
+
+### UPDATE
+PUT  http://localhost:3000/660/materias/1
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+
+        {
+            "id": 1,
+            "nome": "Direito Administrativo",
+            "topico": "Lei de Improbidade Administrativa",
+            "meta": 85.0
+        }
+
+### GET MATERIA
+GET http://localhost:3000/materias/3
+Authorization: Bearer {{TOKEN}}
+
+
+### DELETE MATERIA
+DELETE http://localhost:3000/materias/3
+Authorization: Bearer {{TOKEN}}

@@ -1,0 +1,48 @@
+@TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTczMzMzNDQwNSwiZXhwIjoxNzMzMzM4MDA1LCJzdWIiOiIxIn0.XYsjg0qYyvc4nrVuv7zd4wC392fTHIsrnGpjV-pHjDU
+### LOGIN
+POST http://localhost:3000/login
+content-type: application/json
+
+        {
+            "email": "teste@teste.com",
+            "password": "1234"
+        }
+
+### DURACAO ESTUDOS
+GET http://localhost:3000/660/duracaoEstudos
+Authorization: Bearer {{TOKEN}}
+
+### CREATE
+POST http://localhost:3000/660/duracaoEstudos
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTczMzMzNDQwNSwiZXhwIjoxNzMzMzM4MDA1LCJzdWIiOiIxIn0.XYsjg0qYyvc4nrVuv7zd4wC392fTHIsrnGpjV-pHjDU
+
+        {
+            "id": 1,
+            "materia_id": 1,
+            "minutos": "120",
+            "questoesCorretas": 10,
+            "totalQuestoes":15
+        }
+
+### UPDATE
+PUT  http://localhost:3000/660/duracaoEstudos/1
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+
+        {
+            "id": 2,
+            "materia_id": 1,
+            "minutos": "100",
+            "questoesCorretas": 10,
+            "totalQuestoes":15
+        }
+
+### GET MATERIA
+GET http://localhost:3000/duracaoEstudos/1
+Authorization: Bearer {{TOKEN}}
+
+
+### DELETE MATERIA
+DELETE http://localhost:3000/duracaoEstudos/1
+Authorization: Bearer {{TOKEN}}

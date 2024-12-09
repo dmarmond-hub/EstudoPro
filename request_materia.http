@@ -1,0 +1,30 @@
+### MATERIAS
+GET http://localhost:3000/materias
+
+### CREATE
+POST http://localhost:3000/materias
+content-type: application/json
+
+        {
+            "id": 3,
+            "nome": "Direito Constitucional",
+            "topico": "Direitos Individuais",
+            "meta": 90.0
+        }
+
+### UPDATE
+PUT  http://localhost:3000/materias/3
+content-type: application/json
+
+        {
+            "id": 3,
+            "nome": "Direito Constitucional",
+            "topico": "Direitos Individuais",
+            "meta": 90.0
+        }
+
+### GET MATERIA
+GET http://localhost:3000/materias/3
+
+### DELETE MATERIA
+DELETE http://localhost:3000/materias/3
